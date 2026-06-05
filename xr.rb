@@ -5,21 +5,21 @@
 class Xr < Formula
   desc "xr - manage multiple git repositories"
   homepage "https://github.com/kohbis/xr"
-  version "0.0.23"
+  version "0.0.24"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kohbis/xr/releases/download/v0.0.23/xr_darwin_amd64.tar.gz"
-      sha256 "8d9834147b5f02ffcae04eee40b9fcc7a31856949fb9dfa2e7e0363be81804ec"
+      url "https://github.com/kohbis/xr/releases/download/v0.0.24/xr_darwin_amd64.tar.gz"
+      sha256 "1543db98a84dd7c566f93bc57032fb0e9aed9fc9f44e520e4de8f1f264ca689d"
 
       define_method(:install) do
         bin.install "xr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kohbis/xr/releases/download/v0.0.23/xr_darwin_arm64.tar.gz"
-      sha256 "fbf1e0dd87ebc7481e7fb8ddf3c6f5869040fc2877f00781475875da87f9f99a"
+      url "https://github.com/kohbis/xr/releases/download/v0.0.24/xr_darwin_arm64.tar.gz"
+      sha256 "b6e5ae72cc3352fd05634d254c5653b8becc58797400f0b91ece2eed78cc7d3a"
 
       define_method(:install) do
         bin.install "xr"
@@ -29,15 +29,15 @@ class Xr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kohbis/xr/releases/download/v0.0.23/xr_linux_amd64.tar.gz"
-      sha256 "d526bd8c8a3c5305751d6793027f7ebdbb2d0ad9a1eaba7c696ca2daf496f2c8"
+      url "https://github.com/kohbis/xr/releases/download/v0.0.24/xr_linux_amd64.tar.gz"
+      sha256 "7be9533c20e9f7cfaa8b98ef8e0d4c4229fd0c58451691b9d205de8cd18fa748"
       define_method(:install) do
         bin.install "xr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kohbis/xr/releases/download/v0.0.23/xr_linux_arm64.tar.gz"
-      sha256 "5bb0dfb32f98a8a4dd97ca5b7f911079f98ac79198d8d4c1409edb9011138be1"
+      url "https://github.com/kohbis/xr/releases/download/v0.0.24/xr_linux_arm64.tar.gz"
+      sha256 "0735da2204d89e3d6d8e3e609b6a54f35b2774ad10fd04b196fba26372f415ba"
       define_method(:install) do
         bin.install "xr"
       end
