@@ -5,21 +5,21 @@
 class Xr < Formula
   desc "xr - manage multiple git repositories"
   homepage "https://github.com/kohbis/xr"
-  version "0.5.0"
+  version "0.5.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kohbis/xr/releases/download/v0.5.0/xr_darwin_amd64.tar.gz"
-      sha256 "eee238be26f85214107ae7a9c7c533b4399763a634a77d0df8d28498c49a9904"
+      url "https://github.com/kohbis/xr/releases/download/v0.5.1/xr_darwin_amd64.tar.gz"
+      sha256 "bc6f18b9a3ef3f7632df10cde7b745d9927895b9057819399d8d30e16710e61f"
 
       define_method(:install) do
         bin.install "xr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kohbis/xr/releases/download/v0.5.0/xr_darwin_arm64.tar.gz"
-      sha256 "9e22e75c979f4908700c15e070fc9bd2d3a125d0b320d3f73ed56fa5d432b49b"
+      url "https://github.com/kohbis/xr/releases/download/v0.5.1/xr_darwin_arm64.tar.gz"
+      sha256 "dd2279bad8fc30d4ed2d63ffc0a93b04dec1fa50a4245235f572fb1157d2a707"
 
       define_method(:install) do
         bin.install "xr"
@@ -29,15 +29,15 @@ class Xr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kohbis/xr/releases/download/v0.5.0/xr_linux_amd64.tar.gz"
-      sha256 "3fe6e57250fd8c4efe1d471d7112c434877bf3eb39365d75ed4ba3ad6eaff51d"
+      url "https://github.com/kohbis/xr/releases/download/v0.5.1/xr_linux_amd64.tar.gz"
+      sha256 "47f140f4582fd9af6f2082fc524bbd36c2995b365b6a7f890075d9526d33ee65"
       define_method(:install) do
         bin.install "xr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kohbis/xr/releases/download/v0.5.0/xr_linux_arm64.tar.gz"
-      sha256 "432214e2057c1e16b522fba2846db7b0c4772a2ff0b9ca858e3d68489bee8989"
+      url "https://github.com/kohbis/xr/releases/download/v0.5.1/xr_linux_arm64.tar.gz"
+      sha256 "ed3ece0c8133593a8ec1dd484c0a29c3d2469d069444617d61623e2f43f48045"
       define_method(:install) do
         bin.install "xr"
       end
